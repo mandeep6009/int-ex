@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+  <style>
+  body,
+html  { 
+  width: 100%; height: 100%;
+  
+  background: url(sahara-desert.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  background-size: cover;
+}
+.button{
+border-radius: 4px;
+background-color: green;
+border: none;
+font-size: 22px;
+color: white;
+padding: 20px;
+width: 200px;
+text-align: center;
+transition: all 0.4s;
+margin: 5px;
+}
+.button span {
+cursor: pointer;
+display:inline-block;
+position: relative;
+transition: 0.4s;
+}
+.button span:after{
+content:'\00bb';
+position:absolute;
+top: 0;
+right: -20px;
+opacity: 1;
+transition: 0.5s;
+}
+.button:hover span{
+padding-right:25px;
+.button:hover span:after{
+opacity: 1;
+right:0;
+}
+.button{
+transition: width 1s,
+background 0.5s,1s;
+}
+.rotate {
+
+  transform: rotate(-90deg);
+
+
+  /* Legacy vendor prefixes that you probably don't need... */
+
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+
+  /* IE */
+  -ms-transform: rotate(-90deg);
+
+  /* Opera */
+  -o-transform: rotate(-90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+body{
+animation: color-me-in 5s
+infinite;
+}
+@keyframes color-me-in{
+0% {
+background: orange;
+}
+50%{
+background: blue;
+}
+100%{
+background:white;
+}
+}
+</style>
+</head>
+<body>
+  <marquee><h1 style="color:blue" >The Sahara desert</h1></marquee>
+<marquee><h1 style="color:red"> The Sahara desert</h1> </marquee> 
+<a class="button" href="https://spaceplace.nasa.gov/planets/en/" target="_blank" role="button">Know More</a>
+</body>
+</html>
